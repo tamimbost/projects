@@ -1882,7 +1882,7 @@ h2 {
   margin-top: 0;
   margin-bottom: 0.5em;
   font-family: Saoltext, sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 400;
   line-height: 1.2;
 }
@@ -1940,7 +1940,7 @@ ol {
   padding-left: 40px;
 }
 li {
-  background-image: url(../images/60b0c490c031f81341d79713_ok-icon.svg);
+  background-image: url(../images/DWDKneZPDa3f.svg);
   background-position: 0%;
   background-repeat: no-repeat;
   background-size: 0.8em;
@@ -3489,19 +3489,17 @@ blockquote {
 }
 .logo__emblem {
   z-index: 10;
-  /* margin-left: 2.5em;
-  margin-right: 2.5em; */
   position: relative;
-  font-size: 30px;
-  font-weight: 800;
-  text-shadow: 1px 2px 4px #000;
-  color: #ffffff;
+  font-size: 40px;
+    font-weight: 800;
+    text-shadow: 1px 2px 4px #000;
+    color: #ffffff;
 }
 .logo__emblem > span{
     display: block;
     color: #0392ff;
     text-align: center;
-    font-style: italic;
+    font-size: 25px;
 }
 .kaskady-date {
   color: var(--white);
@@ -3565,10 +3563,12 @@ blockquote {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width:100%;
   display: flex;
   position: relative;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 .bg__rotate.is--80vh {
   height: 80vh;
@@ -3851,13 +3851,6 @@ blockquote {
   height: 200vh;
   position: absolute;
   top: 0;
-}
-.banner-text{
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .fullscr-link {
   color: var(--white);
@@ -4175,7 +4168,7 @@ blockquote {
   line-height: 1.4;
 }
 .welcome-title.wt-home {
-  max-width: 18em;
+  /* max-width: 18em; */
 }
 .welcome-title.is--sub-spa {
   max-width: 40em;
@@ -5831,20 +5824,26 @@ blockquote {
   top: 0;
 }
 .room__box3 {
-  z-index: 40;
+  z-index: 9999;
   text-align: center;
-  background-color: #e6e0da;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
-  max-width: 19em;
-  min-height: 25em;
   margin-bottom: 5em;
   padding: 5em 3.3em;
   font-size: 0.87em;
   display: flex;
   position: relative;
+}
+ iframe{
+  @media (max-width:1217px){
+    height: 445px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .room__box3.is--2 {
   top: -10em;
@@ -5942,7 +5941,7 @@ blockquote {
   z-index: -4;
   opacity: 0;
   object-fit: cover;
-  background-image: url(../images/background-image.svg);
+  background-image: url(../images/f98VVxrDlK8d.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5952,19 +5951,19 @@ blockquote {
   inset: 0%;
 }
 .reservation__bg.is--1 {
-  background-image: url(../images/60b0c490c031f852dcd79891_2-izbova-suita-prestige-4.jpg);
+  background-image: url(../images/Y0Dzr8LmDRmj.jpg);
 }
 .reservation__bg.is--2 {
-  background-image: url(../images/60b0c490c031f87ad9d795a6_hotel-kaskady-wellness-spa-bg__1920px-38.jpg);
+  background-image: url(../images/c9f2WFySi8B2.jpg);
 }
 .reservation__bg.is--3 {
-  background-image: url(../images/60c8632b15cbccc5b38eeb40_rezervacia-pobytu-bg1--tiny.jpg);
+  background-image: url(../images/Gjh12mo855WN.jpg);
 }
 .reservation__bg.is--evet1 {
-  background-image: url(../images/60b0c490c031f8b977d79423_hotel-kaskady__1920px-13.jpg);
+  background-image: url(../images/K7O8j3i5ZXzl.jpg);
 }
 .reservation__bg.is--event2 {
-  background-image: url(../images/60b0c490c031f85210d7983c_kasakdy-promo-bg-5.jpg);
+  background-image: url(../images/VD4CCcEGzlq1.jpg);
 }
 .reservation__wrap {
   justify-content: space-between;
@@ -6075,7 +6074,7 @@ blockquote {
   position: relative;
 }
 .logo__star2 {
-  background-image: url(../images/60b0c490c031f89533d7976a_star_outline_white_24dp.svg);
+  background-image: url(../images/NrDE08Utj37U.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6550,7 +6549,7 @@ blockquote {
   line-height: 1.1;
 }
 .line__in-spa {
-  background-image: url(../images/60b0c490c031f8dcbed7948d_eye-closed.svg);
+  background-image: url(../images/EmB0W1qw1hyC.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6852,7 +6851,7 @@ blockquote {
   padding-left: 0;
 }
 .li__pack {
-  background-image: url(../images/60b0c490c031f81341d79713_ok-icon.svg);
+  background-image: url(../images/DWDKneZPDa3f.svg);
   background-position: 0 4px;
   background-repeat: no-repeat;
   background-size: 13px;
@@ -7074,7 +7073,7 @@ blockquote {
   line-height: 1.5;
 }
 .inclusive__rich li {
-  background-image: url(../images/60b0c490c031f8366bd7986f_verified_black_24dp.svg);
+  background-image: url(../images/g3fzf9GLkhOb.svg);
   background-position: 0 3px;
   background-size: 17px;
   margin-bottom: 1em;
@@ -7389,7 +7388,7 @@ blockquote {
   color: var(--gainsboro);
 }
 .rich__uni li {
-  background-image: url(../images/60b0c490c031f8105cd7986e_verified_white_24dp.svg);
+  background-image: url(../images/1HoWCz4woMg7.svg);
   background-position: 0 4px;
   background-size: 15px;
   margin-top: 0.9em;
@@ -7764,7 +7763,7 @@ blockquote {
 .form__submit {
   background-color: var(--cadet-blue);
   text-align: center;
-  background-image: url(../images/60b0c490c031f82dc3d7973b_arrow_right_alt_white_24dp.svg);
+  background-image: url(../images/yTc3OErjDEbA.svg);
   background-position: 93%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -8334,7 +8333,7 @@ blockquote {
   padding-bottom: 0.6em;
 }
 .li__nws.dark-bg {
-  background-image: url(../images/60b0c490c031f8105cd7986e_verified_white_24dp.svg);
+  background-image: url(../images/1HoWCz4woMg7.svg);
   padding-top: 0.9em;
   padding-bottom: 0.9em;
   padding-left: 2.3em;
@@ -9302,7 +9301,7 @@ blockquote {
 }
 .events__rich h4 {
   color: var(--dark-slate-grey-3);
-  background-image: url(../images/60b0c490c031f8b661d798ab_verified_black_24dp-green.svg);
+  background-image: url(../images/Nnw70x5GijOa.svg);
   background-position: 0%;
   background-repeat: no-repeat;
   background-size: 0.7em;
@@ -9323,7 +9322,7 @@ blockquote {
 }
 .events__rich-list--hide h4 {
   color: var(--dark-slate-grey-3);
-  background-image: url(../images/60b0c490c031f8b661d798ab_verified_black_24dp-green.svg);
+  background-image: url(../images/Nnw70x5GijOa.svg);
   background-position: 0%;
   background-repeat: no-repeat;
   background-size: 0.7em;
@@ -9877,7 +9876,8 @@ blockquote {
   }
   .sec.s-home-start {
       min-height: auto;
-      padding-top: 0;
+      padding-top: 70px;
+      /* background-color: var(--antique-white); */
   }
   .sec.s-padd-overflow {
       padding-top: 3em;
@@ -10526,6 +10526,10 @@ blockquote {
       min-height: 23em;
       margin-bottom: 2em;
       padding: 3.5em 2.9em;
+      @media (max-width:1217px){
+        max-width: unset;
+        width: unset;
+      }
   }
   .room__box3.is--2 {
       top: 0;
@@ -11198,7 +11202,7 @@ blockquote {
       align-items: center;
       width: 100%;
       margin-bottom: 5em;
-      padding: 2.6em 2.6em 8.2em;
+      padding: 70px 30px 30px 10px;
       display: flex;
       position: relative;
   }
@@ -13619,15 +13623,65 @@ blockquote {
 }
 @font-face {
   font-family: "Saoltext";
-  src: url("../fonts/60b0c490c031f8281fd79850_SaolText-Regular.woff2") format("woff2");
+  src: url("../fonts/G1RaUkNhGbIi.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: auto;
 }
 @font-face {
   font-family: "Saoltext";
-  src: url("../fonts/60b0c490c031f8cf1ad79851_SaolText-Thin.woff2") format("woff2");
+  src: url("../fonts/qQA8vUgUFNRw.woff2") format("woff2");
   font-weight: 100;
   font-style: normal;
   font-display: auto;
+}
+.item-number-counter-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  margin-top: 60px;
+}
+.item-number{
+  text-align: center;
+}
+.item-number-title{
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+.item-number-sub-title{
+  font-size: 25px;
+  color: #000;
+  border-bottom: 1px solid #00000026;
+  padding-bottom: 8px;
+}
+.item-def{
+  display: block;
+  margin-top: 10px;
+  color: #000;
+  font-size: 20px;
+}
+.item-image-counter-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  margin-top: 50px;
+}
+.item-img-title{
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #000;
+}
+.item-img > img{
+  filter: invert(56%) sepia(53%) saturate(24%) hue-rotate(333deg) brightness(-34%) contrast(100%);
+  width: 110px;
 }
