@@ -1,11 +1,12 @@
 
 form {
-    background-color: #fff;
+    background-color: #ffffff2f;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     margin: 50px auto;
+    backdrop-filter: blur(60px);
 }
 
 label {
@@ -110,10 +111,25 @@ button:hover {
     display: flex;
     align-items: center;
     gap:  10px;
+    @media (max-width:685px){
+        display: block;
+    }
 }
 .main-gen{
-    width: 20%;
+    width: 30%;
+    @media (max-width:899px){
+        width: 40%;
+    }
+    @media (max-width:685px){
+        width: 100%;
+    }
 }
 .main-name{
-    width: 80%;
+    width: 70%;
+    @media (max-width:899px){
+        width: 60%;
+    }
+    @media (max-width:685px){
+        width: 100%;
+    }
 }
