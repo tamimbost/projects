@@ -2276,6 +2276,9 @@ blockquote {
   justify-content: center;
   align-items: center;
   display: flex;
+  @media (max-width:991px){
+    flex: unset;
+  }
 }
 .nav__col.col-1 {
   justify-content: flex-start;
@@ -3469,6 +3472,9 @@ blockquote {
   width: 6.5em;
   transition: opacity 0.3s;
   display: flex;
+  @media (max-width:1199px){
+    width: unset;
+  }
 }
 .logo__cols:hover {
   opacity: 1;
@@ -3493,12 +3499,51 @@ blockquote {
     font-weight: 800;
     text-shadow: 1px 2px 4px #000;
     color: #ffffff;
+    @media (max-width:560px){
+      font-size: 30px;
+    }
+    @media (max-width:399px){
+      font-size: 25px;
+    }
+}
+.footer__logo{
+  z-index: 10;
+  position: relative;
+  font-size: 40px;
+    font-weight: 800;
+    text-shadow: 1px 2px 4px #000;
+    color: #ffffff;
+}
+.footer__logo > span{
+  z-index: 10;
+  position: relative;
+  font-size: 40px;
+    font-weight: 800;
+    text-shadow: 1px 2px 4px #000;
+    color: #ffffff;
+}
+.menu__logo-link{
+  z-index: 10;
+  position: relative;
+  font-size: 40px;
+    font-weight: 800;
+    text-shadow: 1px 2px 4px #000;
+    color: #ffffff;
+}
+.menu__logo-link > span{
+  display: block;
+  color: #0392ff;
+  text-align: center;
+  font-size: 25px;
 }
 .logo__emblem > span{
     display: block;
     color: #0392ff;
     text-align: center;
     font-size: 25px;
+    @media (max-width:399px){
+      font-size: 18px;
+    }
 }
 .kaskady-date {
   color: var(--white);
