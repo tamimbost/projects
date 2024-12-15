@@ -2386,9 +2386,10 @@ blockquote {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   display: flex;
   overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 .sec.s-padd-overflow {
   flex-direction: column;
@@ -3506,6 +3507,11 @@ blockquote {
       font-size: 25px;
     }
 }
+.logo__emblem > img{
+  width: 100px;
+  scale: 1.6;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(258deg) brightness(109%) contrast(105%);
+}
 .footer__logo{
   z-index: 10;
   position: relative;
@@ -3529,6 +3535,11 @@ blockquote {
     font-weight: 800;
     text-shadow: 1px 2px 4px #000;
     color: #ffffff;
+}
+.menu__logo-link > img{
+  width: 100px;
+  scale: 1.6;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(258deg) brightness(109%) contrast(105%);
 }
 .menu__logo-link > span{
   display: block;
@@ -5557,6 +5568,14 @@ blockquote {
   line-height: 1.6;
   display: flex;
   position: relative;
+}
+.footer__col3--inner3 a >img{
+  /* width: 100px; */
+    scale: 1.6;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(258deg) brightness(109%) contrast(105%);
+    @media (max-width:767px){
+     width: 150px;
+    }
 }
 .nav__menu--left {
   flex-direction: column;
@@ -9923,7 +9942,7 @@ blockquote {
   }
   .sec.s-home-start {
       min-height: auto;
-      padding-top: 70px;
+      /* padding-top: 70px; */
       /* background-color: var(--antique-white); */
   }
   .sec.s-padd-overflow {
@@ -11544,6 +11563,10 @@ blockquote {
   .nav__top {
       padding-left: 0.6em;
       padding-right: 0.6em;
+      @media (max-width:767px){
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
   }
   .nav-link {
       flex: 1;
@@ -12844,10 +12867,7 @@ blockquote {
   .nav__logo {
       width: 2.5em;
   }
-  .nav__top {
-      padding-top: 0.4em;
-      padding-bottom: 0.4em;
-  }
+
   .nav-link {
       flex: 1;
       padding-left: 0.7em;
@@ -13702,19 +13722,19 @@ blockquote {
 .item-number-title{
   font-size: 35px;
   font-weight: bold;
-  color: #000;
+  color: #fff;
   margin-bottom: 10px;
 }
 .item-number-sub-title{
   font-size: 25px;
-  color: #000;
-  border-bottom: 1px solid #00000026;
+  color: #fff;
+  border-bottom: 1px solid #fff;
   padding-bottom: 8px;
 }
 .item-def{
   display: block;
   margin-top: 10px;
-  color: #000;
+  color: #fff;
   font-size: 20px;
 }
 .item-image-counter-wrapper{
@@ -13737,10 +13757,9 @@ blockquote {
   display: block;
   text-align: center;
   margin-top: 15px;
-  color: #000;
+  color: #fff;
 }
 .item-img > img{
-  filter: invert(56%) sepia(53%) saturate(24%) hue-rotate(333deg) brightness(-34%) contrast(100%);
   width: 110px;
 }
 .video-container{
@@ -13767,9 +13786,13 @@ blockquote {
 .developer-left-site{
   width: 45%;
   @media (max-width:991px){
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     margin-bottom: 45px;
+  }
+  @media (max-width:767px){
+    width: 65%;
   }
 }
 .developer-left-site > a{
@@ -13804,6 +13827,10 @@ blockquote {
   @media (max-width:991px){
     width: 100%;
     text-align: center;
+    margin-top: -140px;
+  }
+  @media (max-width:767px){
+    margin-top: -50px;
   }
 }
 .dev-main-title{
@@ -13875,4 +13902,76 @@ blockquote {
 .location-area{
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.tab-area{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.vertical-tabs {
+  display: flex;
+  @media (max-width:767px){
+    display: block;
+  }
+}
+
+.tab-list {
+  padding: 20px 0;
+  margin: 0;
+  list-style-type: none;
+  width: 20%;
+  @media (max-width:767px){
+    width: 100%;
+  }
+}
+.tab-list li{
+  background-image: unset;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.tab-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 45%;
+  @media (max-width:767px){
+    width: 100%;
+  }
+}
+
+.tab-item:hover {
+  background-color: #e9ecef;
+}
+
+.tab-item.active {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.tab-content {
+  flex-grow: 1;
+  padding: 20px;
+  width: 60%;
+  @media (max-width:767px){
+    width: 100%;
+  }
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
 }
