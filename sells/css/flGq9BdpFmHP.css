@@ -13975,3 +13975,52 @@ blockquote {
 .tab-pane.active {
   display: block;
 }
+.about-area{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.about-area-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  justify-content: center;
+  @media (max-width:1199px){
+    display: block;
+  }
+}
+.about-area-right h2{
+  font-size: 60px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  line-height: 70px;
+  @media (max-width:1199px){
+    text-align: center;
+  }
+}
+.about-area-right p{
+  font-size: 22px;
+  color: #000;
+  margin-top: 35px;
+  @media (max-width:1199px){
+    text-align: center;
+  }
+}
+.about-area-left{
+  width: 100%;
+  @media (max-width:1399px){
+    width: 165%;
+  }
+  @media (max-width:1199px){
+    width: 100%;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+  }
+}
+.s-wel{
+  @media (max-width:991px){
+    font-size: 30px;
+  }
+}
