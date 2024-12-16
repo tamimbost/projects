@@ -6094,15 +6094,16 @@ blockquote {
   z-index: 10;
   position: relative;
 }
-.kaskady-date--load {
-  color: var(--white);
-  letter-spacing: 1em;
-  font-size: 0.8em;
+.kaskady-date--load > img {
+  width: 280px;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(258deg) brightness(109%) contrast(105%);
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo__cols--load {
-  justify-content: flex-end;
+  justify-content:center;
   align-items: center;
-  width: 6.5em;
+  width: 100%;
   transition: opacity 0.3s;
   display: flex;
   position: relative;
@@ -8649,8 +8650,11 @@ blockquote {
   color: var(--white);
   letter-spacing: 0.4em;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 80px;
   position: absolute;
+  @media (max-width:767px){
+    font-size: 30px;
+  }
 }
 .menu-txt {
   z-index: 10;
@@ -14010,6 +14014,7 @@ blockquote {
 .about-area{
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #112e2e;
   @media (max-width:767px){
     padding-top: 50px;
     padding-bottom: 50px;
@@ -14036,7 +14041,7 @@ blockquote {
 }
 .about-area-right p{
   font-size: 22px;
-  color: #000;
+  color: #fff;
   margin-top: 35px;
   @media (max-width:1199px){
     text-align: center;
