@@ -1,6 +1,6 @@
 
 form {
-    background-color: #ffffff2f;
+    background: #013d3d36;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -13,13 +13,14 @@ label {
     font-weight: bold;
     margin-top: 10px;
     display: block;
+    color: #fff;
 }
 
 input, select, textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid antiquewhite;
+    border: 1px solid #fff;
     border-radius: .5rem;
     box-sizing: border-box;
 }
@@ -32,13 +33,13 @@ input, select, textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: #fff;
     border-radius: .5rem;
     overflow: hidden;
     cursor: pointer;
 }
 textarea{
-    background-color: antiquewhite;
+    background-color: #fff;
 }
 .selected-option div {
     position: relative;
@@ -51,7 +52,7 @@ textarea{
     position: absolute;
     top: 4rem;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: #fff;
     border-radius: .5rem;
     display: none;
     z-index: 10;
@@ -78,7 +79,7 @@ input.search-box {
 }
 input{
     border: none;
-    background-color: antiquewhite;
+    background-color: #fff;
     border-radius: .5rem;
 }
 .options ol li {
@@ -96,8 +97,8 @@ button {
     margin-top: 20px;
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #fff;
+    color: #000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -105,7 +106,8 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #112e2e;
+    color: #fff;
 }
 .nameing-display{
     display: flex;
