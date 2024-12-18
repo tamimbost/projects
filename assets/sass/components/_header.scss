@@ -1,7 +1,7 @@
 // Start Header Area
 .header-area{
     .header-top{
-        background-color: $an__secondary-color;
+        background-color: $an__green-01;
         padding-top: 14px;
         padding-bottom: 14px;
         border-bottom: 1px solid $an__border-color01;
@@ -37,14 +37,14 @@
                     font-size: 14px;
                     transition: linear 0.3s;
                     &:hover{
-                        color: $an__blue;
+                        color: $an__lemon-green;
                     }
                 }
             }
         }
     }
     .header-bottom{
-        background-color: $an__secondary-color;
+        background-color: $an__green;
         padding-top: 14px;
         padding-bottom: 14px;
         .header-bottom-wrapper{
@@ -81,12 +81,12 @@
                                 position: absolute;
                             }
                             &:hover{
-                                color: $an__blue;
+                                color: $an__lemon-green;
                                 &::after{
                                     width: 100%;
                                     visibility: visible;
                                     opacity: 1;
-                                    background-color: $an__blue;
+                                    background-color: $an__lemon-green;
                                 }
                             }
                         }
@@ -106,7 +106,7 @@
                     font-size: 40px;
                     transition: linear 0.5s;
                     &:hover{
-                        color: $an__blue;
+                        color: $an__lemon-green;
                         cursor: pointer;
                     }
                 }

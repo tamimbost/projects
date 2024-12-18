@@ -494,7 +494,7 @@ textarea {
 }
 /******************************** components ******************************/
 .header-area .header-top {
-  background-color: #000000;
+  background-color: #095658;
   padding-top: 14px;
   padding-bottom: 14px;
   border-bottom: 1px solid rgba(118, 118, 118, 0.231372549);
@@ -542,10 +542,10 @@ textarea {
   transition: linear 0.3s;
 }
 .header-area .header-top .header-top-wrapper .header-top-right .header-top-contact:hover {
-  color: #2555FF;
+  color: #0eff94;
 }
 .header-area .header-bottom {
-  background-color: #000000;
+  background-color: #0a231f;
   padding-top: 14px;
   padding-bottom: 14px;
 }
@@ -588,13 +588,13 @@ textarea {
   position: absolute;
 }
 .header-area .header-bottom .header-bottom-wrapper .header-menu .menu li a:hover {
-  color: #2555FF;
+  color: #0eff94;
 }
 .header-area .header-bottom .header-bottom-wrapper .header-menu .menu li a:hover::after {
   width: 100%;
   visibility: visible;
   opacity: 1;
-  background-color: #2555FF;
+  background-color: #0eff94;
 }
 .header-area .header-bottom .header-bottom-wrapper .header-logo a img {
   width: 170px;
@@ -605,7 +605,7 @@ textarea {
   transition: linear 0.5s;
 }
 .header-area .header-bottom .header-bottom-wrapper .header-menu-bar .mobile-menu-bar:hover {
-  color: #2555FF;
+  color: #0eff94;
   cursor: pointer;
 }
 
@@ -629,7 +629,7 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(10, 10, 11, 0.72);
+  background-color: rgba(10, 10, 11, 0.44);
   z-index: -1;
 }
 .an__hero-area .an__hero-items .an__hero-content {
@@ -678,7 +678,7 @@ textarea {
   width: 80%;
   max-width: 300px;
   height: 100%;
-  background: black;
+  background: #0a231f;
   padding: 20px;
   z-index: 1000;
   transition: left 0.3s ease-in-out;
@@ -754,7 +754,7 @@ textarea {
   margin-bottom: 0;
 }
 .an__mobile-menu-contact a:hover {
-  color: #2555FF;
+  color: #0eff94;
 }
 .an__mobile-menu-contact a i {
   margin-right: 6px;
@@ -776,10 +776,10 @@ textarea {
   transition: linear 0.3s;
 }
 .an__close-btn:hover {
-  border-color: #2555FF;
+  border-color: #0eff94;
 }
 .an__close-btn:hover i {
-  color: #2555FF;
+  color: #0eff94;
 }
 
 .an__nav-list {
@@ -804,7 +804,7 @@ textarea {
   font-size: 18px;
 }
 .an__mobile-menu-copy-right .an__mobile-copyright-text span {
-  color: #2555FF;
+  color: #0eff94;
   font-size: 18px;
   font-weight: 700;
 }
@@ -827,11 +827,11 @@ textarea {
   height: 2.5px;
   opacity: 0;
   visibility: hidden;
-  background-color: #2555FF;
+  background-color: #0eff94;
   transition: 0.5s ease;
 }
 .an__nav-link:hover {
-  color: #2555FF;
+  color: #0eff94;
 }
 .an__nav-link:hover::after {
   width: 100%;

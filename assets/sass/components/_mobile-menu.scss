@@ -6,7 +6,7 @@
     width: 80%;
     max-width: 300px;
     height: 100%;
-    background: black;
+    background: #0a231f;
     padding: 20px;
     z-index: 1000;
     transition: left 0.3s ease-in-out;
@@ -82,7 +82,7 @@
             margin-bottom: 0;
         }
         &:hover{
-            color: $an__blue;
+            color: #0eff94;
         }
         i{
             margin-right: 6px;
@@ -104,9 +104,9 @@
         transition: linear 0.3s;
     }
     &:hover{
-        border-color: $an__blue;
+        border-color: #0eff94;
         i{
-            color: $an__blue;
+            color: #0eff94;
         }
     }
 }
@@ -132,7 +132,7 @@
         color: #fff;
         font-size: 18px;
         span{
-            color: $an__blue;
+            color: #0eff94;
             font-size: 18px;
             font-weight: 700;
         }
@@ -155,11 +155,11 @@
         height: 2.5px;
         opacity: 0;
         visibility: hidden;
-        background-color: $an__blue;
+        background-color: #0eff94;
         transition: 0.5s ease;
     }
     &:hover{
-        color: $an__blue;
+        color: #0eff94;
         &::after{
             width: 100%;
             opacity: 1;
