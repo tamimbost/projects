@@ -1,0 +1,232 @@
+// Start Mobile Menu
+.an__mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+    background: black;
+    padding: 20px;
+    z-index: 1000;
+    transition: left 0.3s ease-in-out;
+}
+
+.an__mobile-menu.an__active {
+    left: 0;
+}
+
+.an__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1%;
+    height: 100%;
+    background: rgb(0 0 0 / 80%);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.an__overlay:hover{
+    cursor: url(../images/cursor-close.svg), pointer;
+}
+.an__overlay.an__active {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+
+.an__overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at var(--x) var(--y), transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.an__overlay.an__animating::before {
+    opacity: 1;
+}
+
+.an__menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.an__logo {
+    a{
+        img{
+            filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(258deg) brightness(109%) contrast(105%);
+            width: 200px;
+        }
+    }
+
+}
+.an__mobile-menu-contact{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    a{
+        display: block;
+        color: #fff;
+        font-size: 18px;
+        transition: linear 0.5s;
+        margin-bottom: 20px;
+        &:last-childP{
+            margin-bottom: 0;
+        }
+        &:hover{
+            color: $an__blue;
+        }
+        i{
+            margin-right: 6px;
+        }
+    }
+}
+.an__close-btn {
+    font-size: 18px;
+    background: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    transition: linear 0.3s;
+    i{
+        color: #fff;
+        transition: linear 0.3s;
+    }
+    &:hover{
+        border-color: $an__blue;
+        i{
+            color: $an__blue;
+        }
+    }
+}
+
+.an__nav-list {
+    list-style: none;
+    margin-top: 90px;
+}
+
+.an__nav-item {
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.an__mobile-menu.an__active .an__nav-item {
+    opacity: 1;
+    transform: translateX(0);
+}
+.an__mobile-menu-copy-right{
+    .an__mobile-copyright-text{
+        color: #fff;
+        font-size: 18px;
+        span{
+            color: $an__blue;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+.an__nav-link {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+    position: relative;
+    transition: linear 0.5s;
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2.5px;
+        opacity: 0;
+        visibility: hidden;
+        background-color: $an__blue;
+        transition: 0.5s ease;
+    }
+    &:hover{
+        color: $an__blue;
+        &::after{
+            width: 100%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.an__toggle-btn {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.an__toggle-btn::before,
+.an__toggle-btn::after {
+    content: '';
+    position: absolute;
+    background: #333;
+    transition: transform 0.3s ease;
+}
+
+.an__toggle-btn::before {
+    width: 2px;
+    height: 12px;
+    top: 6px;
+    left: 11px;
+}
+
+.an__toggle-btn::after {
+    width: 12px;
+    height: 2px;
+    top: 11px;
+    left: 6px;
+}
+
+.an__toggle-btn.an__active::before {
+    transform: rotate(90deg);
+}
+
+
+.an__header-bottom-leftsite-menu-line-shep {
+    cursor: pointer;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+// End Mobile Menu

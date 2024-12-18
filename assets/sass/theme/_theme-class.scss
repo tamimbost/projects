@@ -1,0 +1,36 @@
+// Start Hero Swiper Pagination Bullet
+.swiper-pagination-hero{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    position: absolute;
+    bottom: 35px !important;
+    z-index: 1;
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid $an__primary-color;
+        background-color: transparent;
+        z-index: 1;
+        &.swiper-pagination-bullet-active {
+          position: relative;
+          background-color: $an__primary-color;
+          &::before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            background: transparent;
+            border-radius: 50%;
+            border: 1px solid $an__primary-color;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            top: 50%;
+          }
+        }
+      }
+}
+// End Hero Swiper Pagination Bullet
