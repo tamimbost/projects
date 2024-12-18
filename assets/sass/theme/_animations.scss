@@ -161,3 +161,19 @@
   }
 }
 // End Scaling Animation
+
+// Start Video Wave Animation
+@keyframes videButtonWave {
+  0% {
+      box-shadow: 0 0 0 0 $an__green, 0 0 0 0 $an__green;
+  }
+
+  80% {
+      box-shadow: 0 0 0 20px #fff0, 0 0 0 40px #fff0;
+  }
+
+  100% {
+      box-shadow: 0 0 0 0 #fff0, 0 0 0 0 #fff0;
+  }
+}
+// End Video Wave Aniation

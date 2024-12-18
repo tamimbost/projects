@@ -34,3 +34,39 @@
       }
 }
 // End Hero Swiper Pagination Bullet
+
+// Start Title Area
+.an__title-part{
+  margin-bottom: 50px;
+  @include an__screen-991{
+    margin-top: 35px;
+  }
+  @include an__screen-767{
+    margin-top: 25px;
+  }
+  .an__main-title{
+    font-size: 65px;
+    font-weight: 700;
+    color: $an__primary-color;
+    margin-bottom: 18px;
+    @include an__screen-991{
+      font-size: 55px;
+    }
+    @include an__screen-767{
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+  }
+  .an__sub-title{
+    font-size: 30px;
+    font-weight: 500;
+    color: $an__primary-color;
+    @include an__screen-991{
+      font-size: 25px;
+    }
+    @include an__screen-767{
+      font-size: 20px;
+    }
+  }
+}
+// End Title Area

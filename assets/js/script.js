@@ -17,25 +17,24 @@
       this.wowActivation();
       this.headerSticky();
       this.swiperActivation();
-      this.videoPopup();
     },
-    
+
     // Start Swiper Activation
-    swiperActivation: function (){
+    swiperActivation: function () {
 
       // Start Hero Slider
-      $(document).ready(function(){
+      $(document).ready(function () {
         var interleaveOffset = 0.5;
         var swiper = new Swiper(".an__hero-slider", {
-          slidePreview:1,
+          slidePreview: 1,
           loop: true,
           speed: 1000,
           parallax: true,
-          // autoplay: {
-          //     delay: 3000,
-          //     disableOnInteraction: false,
-          // },
-          // watchSlidesProgress: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          watchSlidesProgress: true,
           pagination: {
             el: ".swiper-pagination-hero",
             clickable: true,
@@ -47,24 +46,12 @@
     },
     // End Swiper Activation
 
-    // Start Video Popup 
-    videoPopup: function (){
-      $(document).ready(function(){
-        $('.an__popup-video').magnificPopup({
-          type: 'iframe',
-          mainClass: 'mfp-fade',
-          removalDelay: 160,
-          preloader: false,
-          fixedContentPos: false
-        });
-      });
-    },
-    // End Video Popup
+
 
     // Start Header Sticky
-    headerSticky: function (){
-      $(document).ready(function (){
-        $(window).on("scroll", function() {
+    headerSticky: function () {
+      $(document).ready(function () {
+        $(window).on("scroll", function () {
           var ScrollBarPostion = $(window).scrollTop();
           if (ScrollBarPostion > 100) {
             $(".an__header-area-home-01").addClass("an__header-sticky");
@@ -78,69 +65,69 @@
 
     // Start Mobile Menu Activation
     mobileMenuActivation: function () {
-      $(document).ready(function() {
-        $('.an__header-mobile-bar').click(function(e) {
-            var rect = e.target.getBoundingClientRect();
-            var x = e.clientX - rect.left;
-            var y = e.clientY - rect.top;
-            
-            $('.an__overlay').css({
-                '--x': x + 'px',
-                '--y': y + 'px'
-            }).addClass('an__animating');
+      $(document).ready(function () {
+        $('.an__header-mobile-bar').click(function (e) {
+          var rect = e.target.getBoundingClientRect();
+          var x = e.clientX - rect.left;
+          var y = e.clientY - rect.top;
 
-            setTimeout(function() {
-                $('.an__mobile-menu, .an__overlay').addClass('an__active');
-                animateNavItems();
-            }, 50);
+          $('.an__overlay').css({
+            '--x': x + 'px',
+            '--y': y + 'px'
+          }).addClass('an__animating');
 
-            setTimeout(function() {
-                $('.an__overlay').removeClass('an__animating');
-            }, 500);
+          setTimeout(function () {
+            $('.an__mobile-menu, .an__overlay').addClass('an__active');
+            animateNavItems();
+          }, 50);
+
+          setTimeout(function () {
+            $('.an__overlay').removeClass('an__animating');
+          }, 500);
         });
 
-        $('.an__close-btn, .an__overlay').click(function() {
-            $('.an__mobile-menu, .an__overlay').removeClass('an__active');
+        $('.an__close-btn, .an__overlay').click(function () {
+          $('.an__mobile-menu, .an__overlay').removeClass('an__active');
         });
 
-        $('.an__toggle-btn').click(function(e) {
-            e.preventDefault();
-            
-            // Close all other submenus
-            $('.an__submenu').not($(this).closest('.an__nav-item').find('.an__submenu')).slideUp().removeClass('an__active');
-            $('.an__toggle-btn').not(this).removeClass('an__active');
-            
-            // Toggle current submenu
-            $(this).toggleClass('an__active');
-            var $submenu = $(this).closest('.an__nav-item').find('.an__submenu');
-            $submenu.slideToggle(function() {
-                if ($submenu.is(':visible')) {
-                    $submenu.addClass('an__active');
-                    animateSubmenuItems($submenu);
-                } else {
-                    $submenu.removeClass('an__active');
-                }
-            });
+        $('.an__toggle-btn').click(function (e) {
+          e.preventDefault();
+
+          // Close all other submenus
+          $('.an__submenu').not($(this).closest('.an__nav-item').find('.an__submenu')).slideUp().removeClass('an__active');
+          $('.an__toggle-btn').not(this).removeClass('an__active');
+
+          // Toggle current submenu
+          $(this).toggleClass('an__active');
+          var $submenu = $(this).closest('.an__nav-item').find('.an__submenu');
+          $submenu.slideToggle(function () {
+            if ($submenu.is(':visible')) {
+              $submenu.addClass('an__active');
+              animateSubmenuItems($submenu);
+            } else {
+              $submenu.removeClass('an__active');
+            }
+          });
         });
 
         function animateNavItems() {
-            $('.an__nav-item').each(function(index) {
-                $(this).css({
-                    'animation': `fadeInRight 0.3s ease forwards ${index * 0.1}s`,
-                    'opacity': '0'
-                });
+          $('.an__nav-item').each(function (index) {
+            $(this).css({
+              'animation': `fadeInRight 0.3s ease forwards ${index * 0.1}s`,
+              'opacity': '0'
             });
+          });
         }
 
         function animateSubmenuItems($submenu) {
-            $submenu.find('.an__submenu-item').each(function(index) {
-                $(this).css({
-                    'animation': `fadeInDown 0.3s ease forwards ${index * 0.1}s`,
-                    'opacity': '0'
-                });
+          $submenu.find('.an__submenu-item').each(function (index) {
+            $(this).css({
+              'animation': `fadeInDown 0.3s ease forwards ${index * 0.1}s`,
+              'opacity': '0'
             });
+          });
         }
-    });
+      });
     },
     // End Mobile Menu Activation
 
@@ -158,8 +145,8 @@
     // End Inline Css Activation
 
     // Start Wow Activation
-    wowActivation: function (){
-      $(document).ready(function (){
+    wowActivation: function () {
+      $(document).ready(function () {
         new WOW().init();
       });
     },
@@ -167,6 +154,23 @@
 
 
   };
+  // Start Video Popup 
+  const videoThumbnail = document.getElementById('videoThumbnail');
+  const videoEmbed = document.getElementById('videoEmbed');
+  const videoPlayer = document.querySelector('.instant-video__player');
+
+  // Add event listener for thumbnail click
+  videoThumbnail.addEventListener('click', () => {
+    // Hide the thumbnail
+    videoThumbnail.style.display = 'none';
+
+    // Show the embedded video
+    videoEmbed.style.display = 'block';
+
+    // Play the video automatically
+    videoPlayer.play();
+  });
+  // End Video Popup
 
   anJs.m();
 })(jQuery, window);
