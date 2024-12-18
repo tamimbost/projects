@@ -28,9 +28,11 @@
     z-index: 999;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
-.an__overlay:hover{
+
+.an__overlay:hover {
     cursor: url(../images/cursor-close.svg), pointer;
 }
+
 .an__overlay.an__active {
     opacity: 1;
     visibility: visible;
@@ -61,34 +63,40 @@
 }
 
 .an__logo {
-    a{
-        img{
+    a {
+        img {
             filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(258deg) brightness(109%) contrast(105%);
             width: 200px;
         }
     }
 
 }
-.an__mobile-menu-contact{
+
+.an__mobile-menu-contact {
     margin-top: 40px;
     margin-bottom: 40px;
-    a{
+
+    a {
         display: block;
         color: #fff;
         font-size: 18px;
         transition: linear 0.5s;
         margin-bottom: 20px;
-        &:last-childP{
+
+        &:last-childP {
             margin-bottom: 0;
         }
-        &:hover{
+
+        &:hover {
             color: #0eff94;
         }
-        i{
+
+        i {
             margin-right: 6px;
         }
     }
 }
+
 .an__close-btn {
     font-size: 18px;
     background: none;
@@ -99,13 +107,16 @@
     display: inline-block;
     text-align: center;
     transition: linear 0.3s;
-    i{
+
+    i {
         color: #fff;
         transition: linear 0.3s;
     }
-    &:hover{
+
+    &:hover {
         border-color: #0eff94;
-        i{
+
+        i {
             color: #0eff94;
         }
     }
@@ -127,17 +138,20 @@
     opacity: 1;
     transform: translateX(0);
 }
-.an__mobile-menu-copy-right{
-    .an__mobile-copyright-text{
+
+.an__mobile-menu-copy-right {
+    .an__mobile-copyright-text {
         color: #fff;
         font-size: 18px;
-        span{
+
+        span {
             color: #0eff94;
             font-size: 18px;
             font-weight: 700;
         }
     }
 }
+
 .an__nav-link {
     display: inline-block;
     font-size: 18px;
@@ -146,7 +160,8 @@
     padding: 5px 0;
     position: relative;
     transition: linear 0.5s;
-    &::after{
+
+    &::after {
         content: '';
         position: absolute;
         left: 0;
@@ -158,9 +173,11 @@
         background-color: #0eff94;
         transition: 0.5s ease;
     }
-    &:hover{
+
+    &:hover {
         color: #0eff94;
-        &::after{
+
+        &::after {
             width: 100%;
             opacity: 1;
             visibility: visible;
@@ -213,6 +230,7 @@
         opacity: 0;
         transform: translateX(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -224,9 +242,11 @@
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
 // End Mobile Menu
