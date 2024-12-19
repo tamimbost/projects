@@ -224,7 +224,8 @@
                 margin-top: 20px;
                 transition: linear 0.4s;
                 @include an__screen-767{
-                    font-size: 18px;
+                    font-size: 16px;
+                    margin-top: 15px;
                 }
             }
         }
