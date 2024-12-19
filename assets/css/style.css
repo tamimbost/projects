@@ -248,7 +248,7 @@ textarea {
   border-radius: 3px;
 }
 
-@keyframes mt__headerStickyAnimations {
+@keyframes an__headerStickyAnimations {
   0% {
     transform: translateY(-100px);
   }
@@ -256,7 +256,7 @@ textarea {
     transform: translateY(0px);
   }
 }
-@keyframes mt__bounceY {
+@keyframes an__bounceY {
   0% {
     transform: translateY(0) translateX(0);
   }
@@ -267,7 +267,7 @@ textarea {
     transform: translateY(0) translateX(0);
   }
 }
-@keyframes mt__bounceX {
+@keyframes an__bounceX {
   0% {
     transform: translateY(0) translateX(0);
   }
@@ -278,7 +278,7 @@ textarea {
     transform: translateY(0) translateX(0);
   }
 }
-@keyframes mt__bounceX1 {
+@keyframes an__bounceX1 {
   0% {
     transform: translateX(0) translateY(0);
   }
@@ -320,12 +320,12 @@ textarea {
     scale: 100%;
   }
 }
-@keyframes mt__rotingAnimation {
+@keyframes an__rotingAnimation {
   100% {
     transform: rotate(360deg);
   }
 }
-@keyframes mt__LeftBesiteAnimation {
+@keyframes an__LeftBesiteAnimation {
   0% {
     left: 0;
   }
@@ -339,12 +339,12 @@ textarea {
     left: 0;
   }
 }
-@keyframes mt__ImgFlowingAnimation {
+@keyframes an__ImgFlowingAnimation {
   100% {
     left: 125%;
   }
 }
-@keyframes mt__banner-slide {
+@keyframes an__banner-slide {
   from {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -354,7 +354,7 @@ textarea {
     transform: translateX(-100%);
   }
 }
-@keyframes mt__circle-text-rotate {
+@keyframes an__circle-text-rotate {
   0% {
     transform: rotate(0deg);
   }
@@ -362,7 +362,7 @@ textarea {
     transform: rotate(360deg);
   }
 }
-@keyframes mt__scalingAnimation {
+@keyframes an__scalingAnimation {
   0% {
     scale: 100%;
   }
@@ -643,6 +643,16 @@ textarea {
   background-color: #0a231f;
   padding-top: 14px;
   padding-bottom: 14px;
+}
+.header-area .header-bottom.an__header-sticky {
+  position: fixed !important;
+  top: 0;
+  animation: an__headerStickyAnimations 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  display: block;
+  width: 100%;
+  box-shadow: 0px 7px 18px rgba(24, 16, 16, 0.0509803922);
+  z-index: 999;
+  max-width: 100%;
 }
 .header-area .header-bottom .header-bottom-wrapper {
   display: flex;

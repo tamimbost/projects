@@ -1,5 +1,5 @@
 // Start Header Sticky Menu Animation
-@keyframes mt__headerStickyAnimations {
+@keyframes an__headerStickyAnimations {
     0% {
       transform: translateY(-100px);
     }
@@ -10,7 +10,7 @@
 // End Header Sticky Menu Animation
 
 // Start Bounce Y Animation
-@keyframes mt__bounceY {
+@keyframes an__bounceY {
     0% {
         transform: translateY(0) translateX(0);
     }
@@ -24,7 +24,7 @@
 // End Bounce Y Animation
 
 // Start Bounce X Animation
-@keyframes mt__bounceX {
+@keyframes an__bounceX {
     0% {
         transform: translateY(0) translateX(0);
     }
@@ -35,7 +35,7 @@
         transform: translateY(0) translateX(0);
     }
 }
-@keyframes mt__bounceX1 {
+@keyframes an__bounceX1 {
     0% {
         transform: translateX(0) translateY(0);
     }
@@ -83,7 +83,7 @@
 // End Bounce Scale Animation
 
 // Start Roting Animation
-@keyframes mt__rotingAnimation{
+@keyframes an__rotingAnimation{
 	100% {
 			  transform: rotate(360deg);
 	}
@@ -91,7 +91,7 @@
 // End Roting Animation
 
 // Start Margin Padding Animation
-@keyframes mt__LeftBesiteAnimation {
+@keyframes an__LeftBesiteAnimation {
   0%{
     left: 0;
   }
@@ -109,7 +109,7 @@
 
 
 // Start Shine Animaton
-@keyframes mt__ImgFlowingAnimation {
+@keyframes an__ImgFlowingAnimation {
 	100% {
 	  left: 125%;
 	}
@@ -118,7 +118,7 @@
 
 
 // Start Banner Sliding Animation
-@keyframes mt__banner-slide {
+@keyframes an__banner-slide {
   from {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -131,7 +131,7 @@
 // End Banner Sliding Animation
 
 // Start Text Cicle Roting Animation
-@keyframes mt__circle-text-rotate {
+@keyframes an__circle-text-rotate {
   0% {
     transform: rotate(0deg);
   }
@@ -143,7 +143,7 @@
 // End Text Circle Roting Animation
 
 // Start Scaling Animation
-@keyframes mt__scalingAnimation {
+@keyframes an__scalingAnimation {
   0% {
     scale: 100%;
   }

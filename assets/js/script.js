@@ -108,9 +108,9 @@
         $(window).on("scroll", function () {
           var ScrollBarPostion = $(window).scrollTop();
           if (ScrollBarPostion > 100) {
-            $(".an__header-area-home-01").addClass("an__header-sticky");
+            $(".header-bottom").addClass("an__header-sticky");
           } else {
-            $(".an__header-area-home-01").removeClass("an__header-sticky");
+            $(".header-bottom").removeClass("an__header-sticky");
           }
         })
       })
