@@ -71,7 +71,7 @@
     jarallaxAactivation: function () {
       $(document).ready(function () {
         $('.jarallax').jarallax({
-          speed: 0.2,
+          speed: 0.4,
         });
       });
     },
