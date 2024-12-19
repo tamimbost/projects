@@ -231,3 +231,35 @@
     }
 }
 // End Premium Feature Area
+
+// Start Gallery Area
+.an__gallery-area{
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @include an__screen-991{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @include an__screen-767{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .an__container01{
+        @include an__screen-767{
+            width: 100%;
+            padding: 0;
+        }
+    }
+    .an__gallery-title-part{
+        @include an__screen-767{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+// End Gallery Area 
