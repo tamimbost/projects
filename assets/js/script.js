@@ -1,5 +1,6 @@
 (function ($, window) {
   "use strict";
+  
   var anJs = {
     m: function () {
       anJs.d();
