@@ -39,10 +39,10 @@
 .an__title-part{
   margin-bottom: 50px;
   @include an__screen-991{
-    margin-top: 35px;
+    margin-bottom: 35px;
   }
   @include an__screen-767{
-    margin-top: 25px;
+    margin-bottom: 25px;
   }
   .an__main-title{
     font-size: 65px;
@@ -66,6 +66,9 @@
     }
     @include an__screen-767{
       font-size: 20px;
+      br{
+        display: none;
+      }
     }
   }
 }
