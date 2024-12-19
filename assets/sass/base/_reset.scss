@@ -5,6 +5,8 @@
   padding: 0;
 }
 html {
+  overflow: hidden;
+  overflow-y: auto;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -15,6 +17,12 @@ body {
   position: relative;
   font-family: $an__primary-font;
   color: $an__primary-color;
+  overflow-x: hidden;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
 }
 ul {
   margin: 0;

@@ -61,7 +61,7 @@
   </header>
   <!-- End Header Area -->
 
-  <main id="site-scrollbar" class="vh-100">
+
   <!-- Start Hero Area -->
    <section class="an__hero-area">
     <div class="an__hero-slider-item">
@@ -115,7 +115,7 @@
   <!-- End Hero Area -->
 
   <!-- Start Concept Area -->
-   <section class="an__concept-area" data-background="assets/images/video-banner-bg.jpg">
+   <section class="an__concept-area jarallax" data-background="assets/images/video-banner-bg.jpg">
     <div class="an__title-part">
       <h2 class="an__main-title text-center wow img-custom-anim-top">Concept</h2>
       <p class="an__sub-title text-center wow img-custom-anim-left">Crafted exclusively in accordance to your lifestyle and made for you <br> transfer to multi-generational living</p>
@@ -223,7 +223,7 @@
   <!-- End Premium Feature Area -->
    
   <!-- Start Gallery Area -->
-   <section class="an__gallery-area" data-background="assets/images/galary-bg.png">
+   <section class="an__gallery-area jarallax" data-background="assets/images/galary-bg.png">
     <div class="an__container01">
       <div class="an__title-part an__gallery-title-part">
         <h2 class="an__main-title text-center wow img-custom-anim-top">Gallery</h2>
@@ -390,7 +390,92 @@
     </div>
    </section>
   <!-- End Gallery Area -->
-  </main>
+
+  <!-- Start Loaction Area -->
+   <section class="an__location-area jarallax" data-background="assets/images/galary-bg.jpg">
+    <div class="an__container01">
+      <div class="an__location-wrapper">
+        <div class="an__title-part">
+          <h2 class="an__main-title text-center wow img-custom-anim-top">Location</h2>
+          <p class="an__sub-title text-center wow img-custom-anim-left">Anyara Hills is conveniently located 25min to KL City Center <br> via New Bypass Road</p>
+        </div>
+        <div class="an__location-item wow img-custom-anim-top">
+            <img src="assets/images/anyara-hills-location.jpg" alt="Anayara">       
+        </div>
+      </div>
+    </div>
+   </section>
+  <!-- End Location Area -->
+
+  <!-- Start Contact Form Area -->
+   <section class="an__contact-area jarallax" data-background="assets/images/map-bg.png">
+    <div class="an__title-part">
+      <h2 class="an__main-title text-center wow img-custom-anim-top">Location</h2>
+      <p class="an__sub-title text-center wow img-custom-anim-left">Anyara Hills is conveniently located 25min to KL City Center <br> via New Bypass Road</p>
+    </div>
+    <div class="an__container01">
+      <div class="an__container-wrapper">
+        <form id="contactForm" method="POST" action="send_mail.php">
+          <!-- Step 1: Select Gender -->
+           <div class="nameing-display">
+              <div class="main-gen">
+                  <label for="gender">Gender</label>
+                  <select id="gender" name="gender" required>
+                    <option value="">Select Gender / Title</option>
+                    <option value="Mr">MR</option>
+                    <option value="Mrs">MRS</option>
+                    <option value="Miss">MISS</option>
+                    <option value="Dr">DR</option>
+                    <option value="Dato">DATO</option>
+                    <option value="Dato Sri">DATO SRI</option>
+                    <option value="Datin">DATIN</option>
+                    <option value="Tan Sri">TAN SRI</option>
+                    <option value="Puan Sri">PUAN SRI</option>
+                  </select>
+              </div>
+              <div class="main-name">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              </div>
+           </div>
+          <!-- Step 3: Write Email -->
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  
+          <!-- Step 4: Country Code and Phone Number -->
+          <label for="contact">Contact Number</label>
+          <div class="select-box">
+              <div class="selected-option">
+                  <div>
+                      <span class="iconify" data-icon="flag:my-4x3"></span>
+                      <strong>+60</strong>
+                  </div>
+                  <input type="tel" id="contact" name="contact" placeholder="Phone Number" required>
+              </div>
+              <div class="options">
+                  <input type="text" class="search-box" placeholder="Search Country Name">
+                  <ol></ol>
+              </div>
+          </div>
+  
+          <!-- Step 5: Pick the Date -->
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+  
+          <!-- Step 6: Optional Message -->
+          <label for="message">Message (Optional)</label>
+          <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+  
+          <!-- Submit Button -->
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+   </section>
+  <!-- End Contact Form Area -->
+
+
+
     
   <!-- Start Mobile Menu  -->
    <div class="an__mobile-menu">
@@ -443,6 +528,8 @@
     <script defer src="assets/js/bootstrap.min.js"></script>
     <script defer src="assets/js/wow.js"></script>
     <script defer src="assets/js/swiper.js"></script>
+    <script defer src="assets/js/number.js"></script>
+    <script defer src="assets/js/iconify.min.js"></script>
     <script defer src="assets/js/jarallax.min.js"></script>
     <script defer src="assets/js/imagesloaded-pkgd.js"></script>
     <script defer src="assets/js/script.js"></script>

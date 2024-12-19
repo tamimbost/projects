@@ -14,6 +14,8 @@ Developed By : MD Saiful Islam Tamim
 }
 
 html {
+  overflow: hidden;
+  overflow-y: auto;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -25,6 +27,12 @@ body {
   position: relative;
   font-family: "Inter", sans-serif;
   color: #FFFFFF;
+  overflow-x: hidden;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
 }
 
 ul {
@@ -1264,6 +1272,230 @@ textarea {
   .an__gallery-area .an__gallery-title-part {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+.an__location-area {
+  position: relative;
+  z-index: 1;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 991px) {
+  .an__location-area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .an__location-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.an__location-area .an__location-item {
+  position: relative;
+}
+.an__location-area .an__location-item img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.an__contact-area {
+  position: relative;
+  z-index: 1;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 991px) {
+  .an__contact-area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .an__contact-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+form {
+  padding: 42px;
+  border-radius: 10px;
+  box-shadow: 19px 17px 29px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  backdrop-filter: blur(60px);
+  background: rgba(9, 86, 88, 0.4117647059);
+}
+@media (max-width: 439px) {
+  form {
+    padding: 20px;
+  }
+}
+
+label {
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+  font-size: 20px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 20px 15px;
+  margin-top: 8px;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #000;
+}
+input::placeholder, select::placeholder, textarea::placeholder {
+  font-size: 18px;
+}
+
+.select-box {
+  position: relative;
+}
+
+.selected-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 13px;
+}
+
+input[type=tel] {
+  margin-top: 0;
+}
+
+textarea {
+  background-color: #fff;
+}
+
+.selected-option div {
+  position: relative;
+  width: 6rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.options {
+  position: absolute;
+  top: 4rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  display: none;
+  z-index: 10;
+}
+
+.options.active {
+  display: block;
+}
+
+input.search-box {
+  background-color: #111;
+  color: #fff;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1rem;
+  border: none;
+}
+
+.options ol {
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: none;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.options ol li {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: #000;
+}
+
+.options ol li:hover {
+  background-color: #fff;
+}
+
+strong {
+  color: #000;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #0eff94;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #12e22c;
+}
+
+.nameing-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 685px) {
+  .nameing-display {
+    display: block;
+  }
+}
+
+.main-gen {
+  width: 30%;
+}
+@media (max-width: 899px) {
+  .main-gen {
+    width: 40%;
+  }
+}
+@media (max-width: 685px) {
+  .main-gen {
+    width: 100%;
+  }
+}
+
+.main-name {
+  width: 70%;
+}
+@media (max-width: 899px) {
+  .main-name {
+    width: 60%;
+  }
+}
+@media (max-width: 685px) {
+  .main-name {
+    width: 100%;
   }
 }
 

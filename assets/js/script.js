@@ -46,7 +46,7 @@
       });
       // End Hero Slider
 
-      // Start Hero Slider
+      // Start Gallery Slider
       $(document).ready(function () {
         var interleaveOffset = 0.5;
         var swiper = new Swiper(".tab-content-img", {
@@ -61,10 +61,11 @@
           watchSlidesProgress: true,
         });
       });
-      // End Hero Slider
+      // End Gallery Slider
 
     },
     // End Swiper Activation
+    
 
     // Start Jarallax Activation
     jarallaxAactivation: function () {

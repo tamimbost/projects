@@ -263,3 +263,30 @@
     }
 }
 // End Gallery Area 
+
+// Start Location Area
+.an__location-area{
+    position: relative;
+    z-index: 1;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include an__screen-991{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @include an__screen-767{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .an__location-item{
+        position: relative;
+        img{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+// End Location Area
