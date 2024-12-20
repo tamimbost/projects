@@ -75,7 +75,7 @@
 .an__mobile-menu-contact {
     margin-top: 40px;
     margin-bottom: 40px;
-    
+
     a {
         display: block;
         color: #fff;
@@ -88,7 +88,7 @@
         }
 
         &:hover {
-            color: #0eff94;
+            color: #1f7b0c;
         }
 
         i {
@@ -118,7 +118,7 @@
     }
 
     &:hover {
-        border-color: #0eff94;
+        border-color: #1f7b0c;
 
         i {
             color: #000;
@@ -150,7 +150,7 @@
         font-size: 18px;
 
         span {
-            color: #0eff94;
+            color: #1f7b0c;
             font-size: 18px;
             font-weight: 700;
         }
@@ -175,12 +175,12 @@
         height: 2.5px;
         opacity: 0;
         visibility: hidden;
-        background-color: #0eff94;
+        background-color: #1f7b0c;
         transition: 0.5s ease;
     }
 
     &:hover {
-        color: #0eff94;
+        color: #1f7b0c;
 
         &::after {
             width: 100%;
