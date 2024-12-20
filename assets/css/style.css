@@ -1280,6 +1280,7 @@ textarea {
   text-align: center;
   row-gap: 40px;
   margin-top: 60px;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .an__premium-feature-area .an__premium-feature-img-items {
@@ -1312,6 +1313,8 @@ textarea {
   font-size: 65px;
   font-weight: 300;
   transition: linear 0.3s;
+  margin-bottom: 15px;
+  display: block;
 }
 @media (max-width: 767px) {
   .an__premium-feature-area .an__premium-feature-img-items .an__premium-feature-img-item i {

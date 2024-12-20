@@ -195,6 +195,7 @@
         text-align: center;
         row-gap: 40px;
         margin-top: 60px;
+        align-items: center;
         @include an__screen-767{
             grid-template-columns: repeat(2, 1fr);
         }
@@ -225,6 +226,8 @@
                 font-size: 65px;
                 font-weight: 300;
                 transition: linear 0.3s;
+                margin-bottom: 15px;
+                display: block;
                 @include an__screen-767{
                     font-size: 45px;
                 }
