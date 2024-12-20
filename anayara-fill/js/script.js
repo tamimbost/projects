@@ -33,10 +33,10 @@
           loop: true,
           speed: 1000,
           parallax: true,
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
+          // autoplay: {
+          //   delay: 3000,
+          //   disableOnInteraction: false,
+          // },
           watchSlidesProgress: true,
           pagination: {
             el: ".swiper-pagination-hero",

@@ -811,6 +811,7 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
 }
 .an__hero-area .an__hero-items .an__hero-content .an__hero-sub-title {
