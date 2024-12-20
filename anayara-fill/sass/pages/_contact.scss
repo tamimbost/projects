@@ -1,0 +1,175 @@
+.an__contact-area{
+        position: relative;
+        z-index: 1;
+        padding-top: 130px;
+        padding-bottom: 130px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include an__screen-991{
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        @include an__screen-767{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+}
+form {
+    padding: 42px;
+    border-radius: 10px;
+    box-shadow: 19px 17px 29px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    backdrop-filter: blur(60px);
+    background: #09565869;
+    @include an__screen-439{
+        padding: 20px;
+    }
+}
+
+label {
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    font-size: 20px;
+    @include an__screen-767{
+        margin-top: 12px;
+        font-size: 16px;
+    }
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 20px 15px;
+    margin-top: 8px;
+    border: 1px solid #ffff;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #000;
+    &::placeholder{
+        font-size: 18px;
+    }
+    @include an__screen-767{
+        padding: 15px;
+    }
+}
+
+.select-box {
+    position: relative;
+}
+
+.selected-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 13px;
+}
+input[type="tel"]{
+    margin-top: 0;
+}
+textarea{
+    background-color: #fff;
+}
+.selected-option div {
+    position: relative;
+    width: 6rem;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.options {
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: .5rem;
+    display: none;
+    z-index: 10;
+}
+
+.options.active {
+    display: block;
+}
+
+input.search-box {
+    background-color: #111;
+    color: #fff;
+    border-radius: .5rem .5rem 0 0;
+    padding: 1rem;
+    border: none;
+}
+
+.options ol {
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+input{
+    border: none;
+    background-color: #fff;
+    border-radius: .5rem;
+}
+.options ol li {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #000;
+}
+
+.options ol li:hover {
+    background-color: #fff;
+}
+strong{
+    color: #000;
+}
+.an__form-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px 0;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.an__form-btn:hover {
+    background-color: #12e22c;
+}
+.nameing-display{
+    display: flex;
+    align-items: center;
+    gap:  10px;
+    @media (max-width:685px){
+        display: block;
+    }
+}
+.main-gen{
+    width: 30%;
+    @media (max-width:899px){
+        width: 40%;
+    }
+    @media (max-width:685px){
+        width: 100%;
+    }
+}
+.main-name{
+    width: 70%;
+    @media (max-width:899px){
+        width: 60%;
+    }
+    @media (max-width:685px){
+        width: 100%;
+    }
+}
