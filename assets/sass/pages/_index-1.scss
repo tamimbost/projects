@@ -198,8 +198,17 @@
         align-items: center;
         @include an__screen-767{
             grid-template-columns: repeat(2, 1fr);
+            margin-top: 0;
         }
         .an__premium-feature-img-item{
+                @include an__screen-767{
+                    border: 1px solid #ffffff7d;
+                    border-radius: 10px;
+                    padding: 15px;
+                }
+                @include an__screen-575{
+                    padding: 8px;
+                }
             &:hover{
                 .an__premium-feature-img{
                     transform: rotateY(360deg);
