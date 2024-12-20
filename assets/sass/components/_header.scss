@@ -107,8 +107,10 @@
             .header-logo{
                 a{
                     img{
-                        width: 170px;
+                        width: 130px;
                         filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(258deg) brightness(109%) contrast(105%);
+                        margin-bottom: 0;
+                        margin-top: 0;
                     }
                 }
             }

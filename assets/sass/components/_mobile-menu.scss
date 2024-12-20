@@ -75,7 +75,7 @@
 .an__mobile-menu-contact {
     margin-top: 40px;
     margin-bottom: 40px;
-
+    
     a {
         display: block;
         color: #fff;
@@ -107,17 +107,22 @@
     display: inline-block;
     text-align: center;
     transition: linear 0.3s;
+    position: relative;
 
     i {
         color: #fff;
         transition: linear 0.3s;
+        position: absolute;
+        top: 30%;
+        transform: translateX(-50%);
     }
 
     &:hover {
         border-color: #0eff94;
 
         i {
-            color: #0eff94;
+            color: #000;
+            font-weight: 800;
         }
     }
 }

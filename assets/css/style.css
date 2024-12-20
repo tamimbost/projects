@@ -702,8 +702,10 @@ textarea {
   background-color: #0eff94;
 }
 .header-area .header-bottom .header-bottom-wrapper .header-logo a img {
-  width: 170px;
+  width: 130px;
   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(258deg) brightness(109%) contrast(105%);
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .header-area .header-bottom .header-bottom-wrapper .header-menu-bar .mobile-menu-bar {
   font-size: 40px;
@@ -917,16 +919,21 @@ textarea {
   display: inline-block;
   text-align: center;
   transition: linear 0.3s;
+  position: relative;
 }
 .an__close-btn i {
   color: #fff;
   transition: linear 0.3s;
+  position: absolute;
+  top: 30%;
+  transform: translateX(-50%);
 }
 .an__close-btn:hover {
   border-color: #0eff94;
 }
 .an__close-btn:hover i {
-  color: #0eff94;
+  color: #000;
+  font-weight: 800;
 }
 
 .an__nav-list {
