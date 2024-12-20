@@ -1293,6 +1293,10 @@ textarea {
 .an__premium-feature-area .an__premium-feature-img-items .an__premium-feature-img-item:hover .an__premium-feature-img-item-name {
   color: #1f7b0c;
 }
+.an__premium-feature-area .an__premium-feature-img-items .an__premium-feature-img-item:hover i {
+  color: #1f7b0c;
+  transform: rotateY(360deg);
+}
 .an__premium-feature-area .an__premium-feature-img-items .an__premium-feature-img-item .an__premium-feature-img {
   width: 80px;
   margin-left: auto;
@@ -1302,6 +1306,16 @@ textarea {
 @media (max-width: 767px) {
   .an__premium-feature-area .an__premium-feature-img-items .an__premium-feature-img-item .an__premium-feature-img {
     width: 60px;
+  }
+}
+.an__premium-feature-area .an__premium-feature-img-items .an__premium-feature-img-item i {
+  font-size: 65px;
+  font-weight: 300;
+  transition: linear 0.3s;
+}
+@media (max-width: 767px) {
+  .an__premium-feature-area .an__premium-feature-img-items .an__premium-feature-img-item i {
+    font-size: 45px;
   }
 }
 .an__premium-feature-area .an__premium-feature-img-items .an__premium-feature-img-item .an__premium-feature-img-item-name {

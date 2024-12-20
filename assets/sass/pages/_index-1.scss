@@ -207,6 +207,10 @@
                 .an__premium-feature-img-item-name{
                     color: $an__lemon-green;
                 }
+                i{
+                    color: $an__lemon-green;
+                    transform: rotateY(360deg)
+                }
             }
             .an__premium-feature-img{
                 width: 80px;
@@ -215,6 +219,14 @@
                 transition: 0.4s;
                 @include an__screen-767{
                     width: 60px;
+                }
+            }
+            i{
+                font-size: 65px;
+                font-weight: 300;
+                transition: linear 0.3s;
+                @include an__screen-767{
+                    font-size: 45px;
                 }
             }
             .an__premium-feature-img-item-name{
