@@ -32,6 +32,10 @@ label {
     margin-top: 20px;
     display: block;
     font-size: 20px;
+    @include an__screen-767{
+        margin-top: 12px;
+        font-size: 16px;
+    }
 }
 
 input, select, textarea {
@@ -45,6 +49,9 @@ input, select, textarea {
     color: #000;
     &::placeholder{
         font-size: 18px;
+    }
+    @include an__screen-767{
+        padding: 15px;
     }
 }
 
@@ -127,8 +134,8 @@ button {
     margin-top: 20px;
     width: 100%;
     padding: 20px 0;
-    background-color:#0eff94; 
-    color: #000;
+    background-color: #1f7b0c;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;

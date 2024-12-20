@@ -5,6 +5,10 @@
         padding-top: 14px;
         padding-bottom: 14px;
         border-bottom: 1px solid $an__border-color01;
+        @include an__screen-767{
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
         .header-top-wrapper{
             display: flex;
             align-items: center;
@@ -13,6 +17,9 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 row-gap: 12px;
+            }
+            @include an__screen-767{
+                row-gap: 4px;
             }
             .header-top-text{
                 font-size: 14px;
@@ -111,6 +118,9 @@
                         filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(258deg) brightness(109%) contrast(105%);
                         margin-bottom: 0;
                         margin-top: 0;
+                        @include an__screen-767{
+                            width: 115px;
+                        }
                     }
                 }
             }

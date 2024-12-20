@@ -54,7 +54,7 @@
       font-size: 55px;
     }
     @include an__screen-767{
-      font-size: 45px;
+      font-size: 35px;
       margin-bottom: 15px;
     }
   }
@@ -66,7 +66,7 @@
       font-size: 25px;
     }
     @include an__screen-767{
-      font-size: 20px;
+      font-size: 16px;
       br{
         display: none;
       }
