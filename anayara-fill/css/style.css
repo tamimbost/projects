@@ -1658,8 +1658,8 @@ textarea {
 
 .modal-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -30px;
+  right: -20px;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -1678,6 +1678,7 @@ textarea {
   max-width: 100%;
   max-height: calc(90vh - 40px);
   object-fit: contain;
+  scale: 1.2;
 }
 
 @media (max-width: 768px) {
