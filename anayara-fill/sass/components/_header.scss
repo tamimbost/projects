@@ -70,6 +70,11 @@
             align-items: center;
             justify-content: space-between;
             .header-menu{
+                &.header-menu-vistaland{
+                    @include an__screen-1299{
+                        display: none;
+                    }
+                }
                 @include an__screen-991{
                     display: none;
                 }

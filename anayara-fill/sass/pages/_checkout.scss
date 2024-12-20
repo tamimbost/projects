@@ -1,0 +1,155 @@
+.accordion {
+    list-style: none;
+    padding: 0;
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background: white;
+}
+
+.accordion-header {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    user-select: none;
+}
+
+.accordion-header:hover {
+    background-color: rgba(42, 123, 123, 0.05);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    border-top: 0px solid #e0e0e0;
+}
+
+.accordion-content.active {
+    max-height: 2000px; /* Large enough to fit content */
+    border-top-width: 1px;
+}
+
+.accordion-content-inner {
+    padding: 20px;
+}
+
+.toggle-icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    flex-shrink: 0;
+    margin-left: 15px;
+}
+
+.toggle-icon::before,
+.toggle-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #2A7B7B;
+    transition: transform 0.3s ease;
+}
+
+.toggle-icon::before {
+    width: 2px;
+    height: 16px;
+    left: 11px;
+    top: 4px;
+}
+
+.toggle-icon::after {
+    width: 16px;
+    height: 2px;
+    left: 4px;
+    top: 11px;
+}
+
+.accordion-item.active .toggle-icon::before {
+    transform: rotate(90deg);
+}
+
+.image-container {
+    cursor:zoom-in;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: unset;
+    flex-direction: column;
+    width: unset;
+    color: unset;
+    pointer-events: unset;
+    background-color: unset;
+    background-clip: unset;
+    border: unset;
+    outline: unset;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: #2A7B7B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    border: none;
+    z-index: 1;
+}
+
+.modal img {
+    max-width: 100%;
+    max-height: calc(90vh - 40px);
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .accordion-header {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}

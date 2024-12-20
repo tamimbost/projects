@@ -223,5 +223,79 @@
   
   // End Video Popup
 
+  // Start Accordion Box and Image Popup
+  document.addEventListener('DOMContentLoaded', function() {
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    const firstItem = accordionItems[0];
+    
+    // Open the first item by default
+    firstItem.classList.add('active');
+    firstItem.querySelector('.accordion-content').classList.add('active');
+
+    document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', function() {
+            const item = this.parentElement;
+            const content = this.nextElementSibling;
+            
+            // Close all items except the clicked one
+            accordionItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.accordion-content').classList.remove('active');
+                }
+            });
+
+            // Toggle the clicked item
+            item.classList.toggle('active');
+            content.classList.toggle('active');
+        });
+
+        // Add keyboard support
+        header.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
+    });
+});
+
+
+
+
+
+// Modal functionality
+const modal = document.querySelector('.modal');
+const modalImg = modal.querySelector('img');
+const modalClose = modal.querySelector('.modal-close');
+
+document.querySelectorAll('.image-container, .an__location-item ').forEach(container => {
+    container.addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent accordion toggle
+        const img = this.querySelector('img');
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+        modal.classList.add('active');
+    });
+});
+
+modalClose.addEventListener('click', () => {
+    modal.classList.remove('active');
+});
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.classList.remove('active');
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+        modal.classList.remove('active');
+    }
+});
+  // End Accordion Box and Image Popup
+
   anJs.m();
 })(jQuery, window);

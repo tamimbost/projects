@@ -382,3 +382,23 @@
     }
 }
 // End About Area
+
+// Start Floor Area
+.an__floor-area{
+    padding-top: 130px;
+    padding-bottom: 130px;
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @include an__screen-991{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @include an__screen-767{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+// End Floor Area
