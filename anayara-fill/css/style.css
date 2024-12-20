@@ -822,7 +822,8 @@ textarea {
 }
 @media (max-width: 575px) {
   .an__hero-area .an__hero-items .an__hero-content .an__hero-sub-title {
-    font-size: 25px;
+    font-size: 20px;
+    letter-spacing: 6px;
   }
 }
 .an__hero-area .an__hero-items .an__hero-content .an__hero-main-title {

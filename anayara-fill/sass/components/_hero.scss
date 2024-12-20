@@ -32,7 +32,8 @@
                 letter-spacing: 8px;
                 line-height: 45px;
                 @include an__screen-575{
-                    font-size: 25px;
+                    font-size: 20px;
+                    letter-spacing: 6px;
                 }
             }
             .an__hero-main-title{
