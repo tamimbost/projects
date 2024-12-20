@@ -38,11 +38,11 @@
             span{
                 background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), 
                 radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
-    -webkit-background-clip: text; /* For WebKit-based browsers */
-    -webkit-text-fill-color: transparent; /* Makes the background visible through the text */
-    background-clip: text; /* Standard property */
-    color: transparent; /* Fallback for browsers that don't support background-clip */
-              font-weight: 600;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                background-clip: text;
+                color: transparent;
+                font-weight: 600;
             }
         }
     }
