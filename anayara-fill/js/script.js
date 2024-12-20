@@ -211,19 +211,16 @@
   // Start Video Popup 
   const videoThumbnail = document.getElementById('videoThumbnail');
   const videoEmbed = document.getElementById('videoEmbed');
-  const videoPlayer = document.querySelector('.instant-video__player');
-
+  
   // Add event listener for thumbnail click
   videoThumbnail.addEventListener('click', () => {
     // Hide the thumbnail
     videoThumbnail.style.display = 'none';
-
+  
     // Show the embedded video
     videoEmbed.style.display = 'block';
-
-    // Play the video automatically
-    videoPlayer.play();
   });
+  
   // End Video Popup
 
   anJs.m();
