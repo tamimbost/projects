@@ -1596,14 +1596,16 @@ textarea {
   padding: 0;
 }
 
-.accordion-item {
+.accordion-item,
+.accordion-items {
   margin-bottom: 20px;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   background: white;
 }
 
-.accordion-header {
+.accordion-header,
+.according-headersers {
   padding: 20px;
   cursor: pointer;
   display: flex;
@@ -1614,18 +1616,21 @@ textarea {
   user-select: none;
 }
 
-.accordion-header:hover {
+.accordion-header:hover,
+.according-headersers:hover {
   background-color: rgba(42, 123, 123, 0.05);
 }
 
-.accordion-content {
+.accordion-content,
+.according-contenster {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
   border-top: 0px solid #e0e0e0;
 }
 
-.accordion-content.active {
+.accordion-content.active,
+.according-contenster.active {
   max-height: 2000px; /* Large enough to fit content */
   border-top-width: 1px;
 }
@@ -1664,7 +1669,8 @@ textarea {
   top: 11px;
 }
 
-.accordion-item.active .toggle-icon::before {
+.accordion-item.active .toggle-icon::before,
+.accordion-items.active .toggle-icon::before {
   transform: rotate(90deg);
 }
 
@@ -1742,7 +1748,8 @@ textarea {
 }
 
 @media (max-width: 768px) {
-  .accordion-header {
+  .accordion-header,
+  .according-headersers {
     padding: 15px;
     font-size: 0.9rem;
   }

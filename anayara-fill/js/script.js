@@ -230,9 +230,9 @@
 
     // Open the first item by default
     firstItem.classList.add('active');
-    firstItem.querySelector('.accordion-content').classList.add('active');
+    firstItem.querySelector('.accordion-content, .according-contenster').classList.add('active');
 
-    document.querySelectorAll('.accordion-header').forEach(header => {
+    document.querySelectorAll('.accordion-header, .according-headersers').forEach(header => {
       header.addEventListener('click', function () {
         const item = this.parentElement;
         const content = this.nextElementSibling;
@@ -241,7 +241,7 @@
         accordionItems.forEach(otherItem => {
           if (otherItem !== item) {
             otherItem.classList.remove('active');
-            otherItem.querySelector('.accordion-content').classList.remove('active');
+            otherItem.querySelector('.accordion-content, .according-contenster').classList.remove('active');
           }
         });
 
