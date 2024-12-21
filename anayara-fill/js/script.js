@@ -225,7 +225,7 @@
 
   // Start Accordion Box and Image Popup
   document.addEventListener('DOMContentLoaded', function () {
-    const accordionItems = document.querySelectorAll('.accordion-item');
+    const accordionItems = document.querySelectorAll('.accordion-item, .accordion-items');
     const firstItem = accordionItems[0];
 
     // Open the first item by default
