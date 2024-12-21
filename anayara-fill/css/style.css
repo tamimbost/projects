@@ -1547,6 +1547,50 @@ textarea {
   }
 }
 
+.an__animation-area {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #0a231f;
+}
+@media (max-width: 991px) {
+  .an__animation-area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .an__animation-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.an__animation-area .an__animation-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: max-content;
+}
+.an__animation-area .accordion-header {
+  font-size: 25px;
+}
+.an__animation-area .an__options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 13px;
+}
+.an__animation-area .an__options:last-child {
+  margin-bottom: 0;
+}
+
 .accordion {
   list-style: none;
   padding: 0;

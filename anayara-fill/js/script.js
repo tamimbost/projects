@@ -269,7 +269,7 @@
   const modalImg = modal.querySelector('img');
   const modalClose = modal.querySelector('.modal-close');
 
-  document.querySelectorAll('.image-container, .an__location-item ').forEach(container => {
+  document.querySelectorAll('.image-container, .an__location-item, .an__animation-img ').forEach(container => {
     container.addEventListener('click', function (e) {
       e.stopPropagation(); // Prevent accordion toggle
       const img = this.querySelector('img');
