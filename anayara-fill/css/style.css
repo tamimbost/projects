@@ -191,6 +191,9 @@ textarea {
   color: #FFFFFF;
   margin-bottom: 18px;
 }
+.an__title-part .an__main-title.an__main-black {
+  color: #000000;
+}
 @media (max-width: 991px) {
   .an__title-part .an__main-title {
     font-size: 55px;
@@ -206,6 +209,9 @@ textarea {
   font-size: 30px;
   font-weight: 500;
   color: #FFFFFF;
+}
+.an__title-part .an__sub-title.an__sub-black {
+  color: #000000;
 }
 @media (max-width: 991px) {
   .an__title-part .an__sub-title {
@@ -769,11 +775,21 @@ textarea {
   padding-left: 20px;
   padding-right: 20px;
 }
+@media (max-width: 767px) {
+  .an__footer-area .an__copyright-area {
+    padding: 10px 5px;
+  }
+}
 .an__footer-area .an__copyright-area .an__copyright-text {
   text-align: center;
   font-size: 18px;
   font-weight: 400;
   color: #fff;
+}
+@media (max-width: 767px) {
+  .an__footer-area .an__copyright-area .an__copyright-text {
+    font-size: 10px;
+  }
 }
 .an__footer-area .an__copyright-area .an__copyright-text span {
   background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
@@ -1891,6 +1907,37 @@ strong {
   .main-name {
     width: 100%;
   }
+}
+
+.logo-container {
+  text-align: center;
+  color: #fff;
+}
+
+.symbol {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: -10px;
+  letter-spacing: -1px;
+}
+
+.brand-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.sub-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 8px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-top: 4px;
+  text-transform: uppercase;
 }
 
 .tabs {

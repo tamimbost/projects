@@ -50,6 +50,9 @@
     font-weight: 700;
     color: $an__primary-color;
     margin-bottom: 18px;
+    &.an__main-black{
+      color: $an__secondary-color;
+    }
     @include an__screen-991{
       font-size: 55px;
     }
@@ -62,6 +65,9 @@
     font-size: 30px;
     font-weight: 500;
     color: $an__primary-color;
+    &.an__sub-black{
+      color: $an__secondary-color;
+    }
     @include an__screen-991{
       font-size: 25px;
     }
