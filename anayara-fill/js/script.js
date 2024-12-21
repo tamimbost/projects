@@ -225,37 +225,51 @@
 
   // Start Accordion Box and Image Popup
   document.addEventListener('DOMContentLoaded', function () {
-    const accordionItems = document.querySelectorAll('.accordion-item, .accordion-items');
-    const firstItem = accordionItems[0];
+    const accordionGroups = document.querySelectorAll('.accordion');
 
-    // Open the first item by default
-    firstItem.classList.add('active');
-    firstItem.querySelector('.accordion-content, .according-contenster').classList.add('active');
+    accordionGroups.forEach(group => {
+      const accordionItems = group.querySelectorAll('.accordion-item, .accordion-items');
+      const firstItem = accordionItems[0];
 
-    document.querySelectorAll('.accordion-header, .according-headersers').forEach(header => {
-      header.addEventListener('click', function () {
-        const item = this.parentElement;
-        const content = this.nextElementSibling;
+      // Open the first item of each group by default
+      if (firstItem) {
+        firstItem.classList.add('active');
+        const firstItemContent = firstItem.querySelector('.accordion-content, .according-contenster');
+        if (firstItemContent) {
+          firstItemContent.classList.add('active');
+        }
+      }
 
-        // Close all items except the clicked one
-        accordionItems.forEach(otherItem => {
-          if (otherItem !== item) {
-            otherItem.classList.remove('active');
-            otherItem.querySelector('.accordion-content, .according-contenster').classList.remove('active');
+      group.querySelectorAll('.accordion-header, .according-headersers').forEach(header => {
+        header.addEventListener('click', function () {
+          const item = this.parentElement;
+          const content = this.nextElementSibling;
+
+          // Close all items in this group except the clicked one
+          accordionItems.forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.classList.remove('active');
+              const otherItemContent = otherItem.querySelector('.accordion-content, .according-contenster');
+              if (otherItemContent) {
+                otherItemContent.classList.remove('active');
+              }
+            }
+          });
+
+          // Toggle the clicked item
+          item.classList.toggle('active');
+          if (content) {
+            content.classList.toggle('active');
           }
         });
 
-        // Toggle the clicked item
-        item.classList.toggle('active');
-        content.classList.toggle('active');
-      });
-
-      // Add keyboard support
-      header.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          this.click();
-        }
+        // Add keyboard support
+        header.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.click();
+          }
+        });
       });
     });
   });
