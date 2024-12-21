@@ -63,6 +63,23 @@
       });
       // End Gallery Slider
 
+      // Start Hero Slider
+      $(document).ready(function () {
+        var interleaveOffset = 0.5;
+        var swiper = new Swiper(".an__locations-items", {
+          slidePreview: 1,
+          loop: true,
+          speed: 1000,
+          parallax: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          watchSlidesProgress: true,
+        });
+      });
+      // End Hero Slider
+
     },
     // End Swiper Activation
 
